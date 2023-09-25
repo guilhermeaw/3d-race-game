@@ -1,6 +1,6 @@
-import { useTrimesh } from "@react-three/cannon";
-import { useLoader } from "@react-three/fiber";
 import { useRef } from "react";
+import { useLoader } from "@react-three/fiber";
+import { useTrimesh } from "@react-three/cannon";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 export function Ramp() {
@@ -11,7 +11,7 @@ export function Ramp() {
   const vertices = geometry.attributes.position.array;
   const indices = geometry.index.array;
 
-  const [ref] = useTrimesh(
+  useTrimesh(
     () => ({
       args: [vertices, indices],
       mass: 0,

@@ -7,4 +7,3 @@ export * from "./Mine";
 export * from "./Ramp";
 export * from "./Rocks";
 export * from "./Track";
-export * from "./WheelDebug";

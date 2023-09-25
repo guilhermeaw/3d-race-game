@@ -5,7 +5,6 @@ import { useBox, useRaycastVehicle } from "@react-three/cannon";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 import { CARS } from "../carsConstants";
-import { WheelDebug } from "./WheelDebug";
 import {
   useCheckpointsStore,
   useCollisionEvents,
@@ -96,11 +95,6 @@ export function Car({ carNumber }) {
           position={[0, -0.09, 0]}
         />
       </group>
-
-      <WheelDebug wheelRef={wheels[0]} radius={wheelRadius} />
-      <WheelDebug wheelRef={wheels[1]} radius={wheelRadius} />
-      <WheelDebug wheelRef={wheels[2]} radius={wheelRadius} />
-      <WheelDebug wheelRef={wheels[3]} radius={wheelRadius} />
     </group>
   );
 }

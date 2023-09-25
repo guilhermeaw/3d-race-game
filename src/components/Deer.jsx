@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import * as THREE from "three";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { ColliderBox } from "./ColliderBox";
 
