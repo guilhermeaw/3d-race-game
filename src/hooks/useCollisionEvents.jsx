@@ -47,7 +47,6 @@ export const useCollisionEvents = () => {
     const hasCrossedFinishLine = distance < collisionDistanceThreshold;
 
     if (hasCrossedFinishLine) {
-      console.log("newLap");
       registerNewLap(carNumber);
       clearCheckpoints(carNumber);
     }
