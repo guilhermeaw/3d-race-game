@@ -19,12 +19,9 @@ export const useCollisionEvents = () => {
           checkpoint.position.z,
         );
 
-        // Calcule a distância entre o carro e o checkpoint
         const distance = carPosition.distanceTo(checkpointPosition);
 
-        // Verifique se a distância é menor que o limite de colisão
         if (distance < collisionDistanceThreshold) {
-          // Verifique qual carro passou pelo checkpoint e atualize o estado do checkpoint
           registerCheckpoint(checkpoint.id, carNumber);
         }
 
